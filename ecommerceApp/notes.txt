@@ -1,0 +1,5 @@
+What is Component annotation?
+How spring know which class object will create?
+What is Autowired?
+What is field, constructor and setter injector?
+What is Primary and Qualifier annotation?
