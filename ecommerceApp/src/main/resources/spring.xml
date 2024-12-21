@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="build" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.Build">
+        <constructor-arg name="buildParam" value="15"/>
+        <constructor-arg name="compile" ref="compile"/>
+    </bean>
+    <bean id="compile" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.Compile">
+        <property name="compileId" value="766"/>
+    </bean>
+</beans>

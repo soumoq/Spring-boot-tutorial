@@ -1,11 +1,10 @@
-package com.ecommerceApp.ecommerceApp;
+package com.ecommerceApp.ecommerceApp.SpringBoot;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("desktop")
+@Primary
 public class Desktop implements Computer {
     @Override
     public void compiler() {
