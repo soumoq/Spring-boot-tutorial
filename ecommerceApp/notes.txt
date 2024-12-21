@@ -3,3 +3,6 @@ How spring know which class object will create?
 What is Autowired?
 What is field, constructor and setter injector?
 What is Primary and Qualifier annotation?
+IOC container
+Beans, ApplicationContext, ClassPathXmlApplicationContext
+The number of time we declare the Class name into the bean inside the IOC container the object will create that number of time.
