@@ -16,3 +16,4 @@ RequestMapping, RestController annotation
 projectlombok dependency
 Service annotation, Autowired annotation
 GetMapping, PostMapping annotation
+PutMapping, DeleteMapping annotation
