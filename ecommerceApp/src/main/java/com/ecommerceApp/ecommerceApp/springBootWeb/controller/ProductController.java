@@ -15,6 +15,7 @@ public class ProductController {
 
     @GetMapping("/products")
     public List<Product> getProduct(){
+        System.out.println("Hi");
         return productService.getProducts();
     }
 
@@ -26,5 +27,15 @@ public class ProductController {
     @PostMapping("/products")
     public String addProduct(@RequestBody Product product){
         return productService.setProduct(product);
+    }
+
+    @PutMapping("/products")
+    public String updateProduct(@RequestBody Product product){
+        return productService.updateProduct(product);
+    }
+
+    @DeleteMapping("/products/{proId}")
+    public String deleteProduct(@PathVariable int proId){
+        return productService.deleteProduct(proId);
     }
 }

@@ -21,10 +21,9 @@ public class ProductService {
     }
 
     public Product getProductById(int id) {
-        for (Product product : products) {
+        for (Product product : products)
             if (id == product.getProId())
                 return product;
-        }
         throw new NullPointerException("The id not exist");
     }
 
@@ -32,5 +31,25 @@ public class ProductService {
     public String setProduct(Product product) {
         products.add(product);
         return "Product added";
+    }
+
+    public String updateProduct(Product pro) {
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getProId() == pro.getProId()) {
+                products.set(i, pro);
+                return "Data updated";
+            }
+        }
+        return "Id not found";
+    }
+
+    public String deleteProduct(int proid) {
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getProId() == proid) {
+                products.remove(i);
+                return "Data deletd";
+            }
+        }
+        return "id not found";
     }
 }
