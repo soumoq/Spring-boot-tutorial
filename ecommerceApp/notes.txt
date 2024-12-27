@@ -9,3 +9,11 @@ The number of time we declare the Class name into the bean inside the IOC contai
 Setter injection and contractor injection.
 What is Autowired without boot?
 Autowired byType, byName etc.
+
+---------------------------spring web -------------------------
+Controller, Front Controller (), RestController
+RequestMapping, RestController annotation
+projectlombok dependency
+Service annotation, Autowired annotation
+GetMapping, PostMapping annotation
+PutMapping, DeleteMapping annotation
