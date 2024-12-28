@@ -17,3 +17,9 @@ projectlombok dependency
 Service annotation, Autowired annotation
 GetMapping, PostMapping annotation
 PutMapping, DeleteMapping annotation
+
+------------------------- Spring data JPA --------------------------
+Java ORM in spring.
+what is spring.datasource.url (Its a config to configure the database)
+JpaRepository interface (JpaRepository<Product, Integer>)
+Entity and ID annotation
