@@ -14,27 +14,27 @@ public class ProductController {
     ProductService productService;
 
     @GetMapping("/products")
-    public List<Product> getProduct(){
+    public List<Product> getProduct() {
         return productService.getProducts();
     }
 
     @GetMapping("/products/{proId}")
-    public Product getProductById(@PathVariable int proId){
+    public Product getProductById(@PathVariable int proId) {
         return productService.getProductById(proId);
     }
 
     @PostMapping("/products")
-    public String addProduct(@RequestBody Product product){
+    public String addProduct(@RequestBody Product product) {
         return productService.setProduct(product);
     }
 
     @PutMapping("/products")
-    public String updateProduct(@RequestBody Product product){
+    public String updateProduct(@RequestBody Product product) {
         return productService.updateProduct(product);
     }
 
     @DeleteMapping("/products/{proId}")
-    public String deleteProduct(@PathVariable int proId){
+    public String deleteProduct(@PathVariable int proId) {
         return productService.deleteProduct(proId);
     }
 }

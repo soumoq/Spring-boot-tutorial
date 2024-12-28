@@ -1,15 +1,17 @@
 package com.ecommerceApp.ecommerceApp.springBootWeb.model;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Product {
+    @Id
     private int proId;
     private String proName;
     private String proPrice;
 
-    public Product(int proId, String proName, String proPrice) {
-        this.proId = proId;
-        this.proName = proName;
-        this.proPrice = proPrice;
+    public Product() {
     }
 
     public int getProId() {

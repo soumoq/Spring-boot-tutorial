@@ -1,6 +1,8 @@
 package com.ecommerceApp.ecommerceApp.springBootWeb.service;
 
 import com.ecommerceApp.ecommerceApp.springBootWeb.model.Product;
+import com.ecommerceApp.ecommerceApp.springBootWeb.repository.ProductRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,46 +12,36 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    private final List<Product> products = new ArrayList<>(Arrays.asList(
-            new Product(101, "Java book", "500"),
-            new Product(102, "C book", "520"),
-            new Product(103, "C++ book", "5400")
-    ));
+//    private final List<Product> products = new ArrayList<>(Arrays.asList(
+//            new Product(101, "Java book", "500"),
+//            new Product(102, "C book", "520"),
+//            new Product(103, "C++ book", "5400")
+//    ));
+    @Autowired
+    ProductRepo productRepo;
 
     public List<Product> getProducts() {
-        return products;
+        return productRepo.findAll();
     }
 
     public Product getProductById(int id) {
-        for (Product product : products)
-            if (id == product.getProId())
-                return product;
-        throw new NullPointerException("The id not exist");
+       return productRepo.findById(id).orElse(new Product());
+
     }
 
 
     public String setProduct(Product product) {
-        products.add(product);
+        productRepo.save(product);
         return "Product added";
     }
 
     public String updateProduct(Product pro) {
-        for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getProId() == pro.getProId()) {
-                products.set(i, pro);
-                return "Data updated";
-            }
-        }
-        return "Id not found";
+        productRepo.save(pro);
+        return "product updated";
     }
 
     public String deleteProduct(int proid) {
-        for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getProId() == proid) {
-                products.remove(i);
-                return "Data deletd";
-            }
-        }
-        return "id not found";
+        productRepo.deleteById(proid);
+        return "product deleted";
     }
 }
