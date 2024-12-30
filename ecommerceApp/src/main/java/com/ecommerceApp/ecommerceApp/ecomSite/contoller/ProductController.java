@@ -71,4 +71,10 @@ public class ProductController {
         return new ResponseEntity<>(productService.deleteProduct(productId), HttpStatus.OK);
     }
 
+    @GetMapping("/products/search")
+    public ResponseEntity<List<Product>> searchProduct(@RequestParam String keyword) {
+        System.out.println("Key: " + keyword);
+        return new ResponseEntity<>(productService.searchProduct(keyword), HttpStatus.OK);
+    }
+
 }
