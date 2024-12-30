@@ -28,4 +28,18 @@ public class ProductService {
         product.setImageData(imageFile.getBytes());
         return productRepo.save(product);
     }
+
+    public String deleteProduct(int productId) {
+        productRepo.deleteById(productId);
+        return "Product deleted successful";
+    }
+
+    public void updateProduct(int productId, Product product, MultipartFile imageFile) throws IOException {
+        if (productRepo.findById(productId).isPresent()) {
+            product.setImageName(imageFile.getOriginalFilename());
+            product.setImageType(imageFile.getContentType());
+            product.setImageData(imageFile.getBytes());
+            productRepo.save(product);
+        }
+    }
 }
