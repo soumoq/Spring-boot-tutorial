@@ -3,7 +3,6 @@ package com.ecommerceApp.ecommerceApp.ecomSite.service;
 import com.ecommerceApp.ecommerceApp.ecomSite.model.Product;
 import com.ecommerceApp.ecommerceApp.ecomSite.repo.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
