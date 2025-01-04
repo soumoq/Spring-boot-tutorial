@@ -13,13 +13,20 @@ Autowired byType, byName etc.
 ---------------------------spring web -------------------------
 Controller, Front Controller (), RestController
 RequestMapping, RestController annotation
-projectlombok dependency
+projectlombok
 Service annotation, Autowired annotation
 GetMapping, PostMapping annotation
 PutMapping, DeleteMapping annotation
+RequestBody (accept whole json) and RequestPart (?), PathVariable annotation
 
 ------------------------- Spring data JPA --------------------------
 Java ORM in spring.
 what is spring.datasource.url (Its a config to configure the database)
 JpaRepository interface (JpaRepository<Product, Integer>)
 Entity and ID annotation
+CrossOrigin annotation
+ResponseEntity - its return the status along with object.
+Lob annotation - for long variable came from projectlombok
+MultipartFile file handel update file
+RequestParam annotation
+
