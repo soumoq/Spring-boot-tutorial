@@ -30,3 +30,5 @@ Lob annotation - for long variable came from projectlombok
 MultipartFile file handel update file
 RequestParam annotation
 
+-------------------------- Spring security ---------------------------
+spring-boot-starter-security dependency
