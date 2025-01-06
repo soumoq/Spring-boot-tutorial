@@ -9,6 +9,10 @@ The number of time we declare the Class name into the bean inside the IOC contai
 Setter injection and contractor injection.
 What is Autowired without boot?
 Autowired byType, byName etc.
+Every controller converted to servlet behind the sine.
+What is servlet container
+What is front controller or dispatcher servlet? -> its interest with deferment controller.
+What is filer chain? UsernamePasswordAuthenticatorFilter
 
 ---------------------------spring web -------------------------
 Controller, Front Controller (), RestController
@@ -32,3 +36,9 @@ RequestParam annotation
 
 -------------------------- Spring security ---------------------------
 spring-boot-starter-security dependency
+What is filer chain? UsernamePasswordAuthenticatorFilter
+what is session id?
+What is HttpServletRequest? using this class how to print session id?
+spring.security.user.name
+spring.security.user.password
+what is CSRF token?
