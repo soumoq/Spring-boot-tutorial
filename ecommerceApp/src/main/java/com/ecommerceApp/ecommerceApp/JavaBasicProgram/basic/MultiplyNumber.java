@@ -1,4 +1,4 @@
-package com.ecommerceApp.ecommerceApp.JavaBasicProgram;
+package com.ecommerceApp.ecommerceApp.JavaBasicProgram.basic;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.ecommerceApp.ecommerceApp.JavaBasicProgram;
+package com.ecommerceApp.ecommerceApp.JavaBasicProgram.basic;
 
 public class PrimeNumber {
     public static void main(String[] args) {
