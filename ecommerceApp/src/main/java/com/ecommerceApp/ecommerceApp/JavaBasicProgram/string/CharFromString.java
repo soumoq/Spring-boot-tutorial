@@ -2,7 +2,7 @@ package com.ecommerceApp.ecommerceApp.JavaBasicProgram.string;
 
 public class CharFromString {
     public static void main(String[] args) {
-        String s1 = "hello";
+        String s1 = "Geeks";
         int c = 0;
         for (int i = s1.length() - 1; i >= 0; i--) {
             System.out.print(s1.charAt(i));
