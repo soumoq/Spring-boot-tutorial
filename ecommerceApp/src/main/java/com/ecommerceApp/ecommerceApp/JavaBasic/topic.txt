@@ -1,0 +1,30 @@
+Generic class
+enum class
+interface java 8 9, functional interface and lamda stream
+exception handling (custom exception)
+wraper class (call by value, call by referance)
+design parten (singletone, immutable class)
+java reflection
+custom annotation
+stream
+lazzy and egerly initially initialization
+thread and compleatable future
+
+collection fram work :
+    priority queue, array dequeue, linked list, arraylist, vactor, hash table stack etc
+
+
+ Spring -------
+ annotation : in controller class all annotation
+ Spring vs Spring boot
+ Spring vs servelet
+ Spring profiling (value and profile annotation)
+ conditional property
+ architection diagram of spring boot.
+ spring AOP
+ @transectional annotationi
+ acync annotation
+ hateoas auth API
+ spring boot exception handaling
+ rest tamplate, rest client
+ JWT auth

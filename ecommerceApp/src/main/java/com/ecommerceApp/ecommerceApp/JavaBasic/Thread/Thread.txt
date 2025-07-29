@@ -1,0 +1,20 @@
+Multithreading -
+    Executing multipal thread or sub-process at the same time.
+    Process and Thread Def :
+        Context switching
+        inter thread communication and inter process communication
+        Address space : Process will take defence address space and thread takes same address space.
+        Dependency : process is not dependant and thread is dependant
+        Synchronization : Process dose not need Synchronization but thread need.
+        Resource consumption and time creation and termination : Process need more thread need less.
+
+    Thread lifecycle :
+        new, runnable, waiting, timed waiting, terminate
+
+    Imp thread method :
+        getPrioritygetPriority() / setPriority()
+        join() yield() join(ms)
+        wait() notify() notifyAll()
+        interrupt(), isInterrupted(), interrupted()
+
+synchronized
