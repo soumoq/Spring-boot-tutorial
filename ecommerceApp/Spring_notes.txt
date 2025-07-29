@@ -33,13 +33,4 @@ ResponseEntity - its return the status along with object.
 Lob annotation - for long variable came from projectlombok
 MultipartFile file handel update file
 RequestParam annotation
-spring-boot-starter-security dependency
 
--------------------------- Spring security ---------------------------
-spring-boot-starter-security dependency
-What is filer chain? UsernamePasswordAuthenticatorFilter
-what is session id?
-What is HttpServletRequest? using this class how to print session id?
-spring.security.user.name
-spring.security.user.password
-what is CSRF token?
