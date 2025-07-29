@@ -1,0 +1,3 @@
+What is consumer interface?
+What is functional interface?
+What is anonymous class?

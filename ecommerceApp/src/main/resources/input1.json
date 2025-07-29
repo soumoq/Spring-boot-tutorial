@@ -1,0 +1,41 @@
+{
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "zip": "10001"
+    },
+    "orders": [
+      {
+        "order_id": 101,
+        "date": "2024-02-18",
+        "items": [
+          {
+            "product": "Mouse",
+            "price": 25.50,
+            "quantity": 2
+          }
+          ,    {
+            "product": "Laptop",
+            "price": 1200.99,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "order_id": 102,
+        "date": "2024-02-15",
+        "items": [
+          {
+            "product": "Keyboard",
+            "price": 45.75,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+}
