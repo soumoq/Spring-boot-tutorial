@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    constructor inject and setter inject example-->
+    <bean id="build" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.Build">
+        <constructor-arg name="buildParam" value="15"/>
+        <constructor-arg name="compile" ref="compile"/>
+    </bean>
+
+    <bean id="compile" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.Compile">
+        <property name="compileId" value="766"/>
+    </bean>
+
+
+    <bean id="emp" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.org.Emp">
+        <constructor-arg name="id" value="093895"/>
+        <constructor-arg name="salary" ref="salary"/>
+        <constructor-arg name="work" ref="work"/>
+    </bean>
+
+    <bean id="salary" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.org.Salary">
+        <constructor-arg name="amount" value="70000"/>
+        <constructor-arg name="bank" ref="bank"/>
+    </bean>
+
+    <bean id="bank" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.org.Bank">
+        <property name="name" value="SBI"/>
+    </bean>
+
+    <bean id="work" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.org.Work">
+        <constructor-arg name="deg" value="IC2"/>
+        <constructor-arg name="technology" value="Hadoop"/>
+    </bean>
+
+    <!--    autowire example-->
+    <bean id="developer" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.server.Dev" autowire="byType">
+        <constructor-arg value="1998"/>
+    </bean>
+
+    <bean id="computer" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.server.Laptop" primary="true"/>
+    <bean id="desk" class="com.ecommerceApp.ecommerceApp.springWithoutBoot.server.Desktop"/>
+</beans>
