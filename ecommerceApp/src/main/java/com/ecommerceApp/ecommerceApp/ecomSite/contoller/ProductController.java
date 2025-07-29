@@ -2,6 +2,7 @@ package com.ecommerceApp.ecommerceApp.ecomSite.contoller;
 
 import com.ecommerceApp.ecommerceApp.ecomSite.model.Product;
 import com.ecommerceApp.ecommerceApp.ecomSite.service.ProductService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,6 +19,11 @@ public class ProductController {
 
     @Autowired
     ProductService productService;
+
+    @GetMapping("/")
+    public String testPage(HttpServletRequest httpServletRequest) {
+        return "Hello world :" + httpServletRequest.getSession().getId();
+    }
 
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getProducts() {

@@ -9,6 +9,10 @@ The number of time we declare the Class name into the bean inside the IOC contai
 Setter injection and contractor injection.
 What is Autowired without boot?
 Autowired byType, byName etc.
+Every controller converted to servlet behind the sine.
+What is servlet container
+What is front controller or dispatcher servlet? -> its interest with deferment controller.
+What is filer chain? UsernamePasswordAuthenticatorFilter
 
 ---------------------------spring web -------------------------
 Controller, Front Controller (), RestController
@@ -30,5 +34,3 @@ Lob annotation - for long variable came from projectlombok
 MultipartFile file handel update file
 RequestParam annotation
 
--------------------- Basic java program link -------------------------
-https://www.geeksforgeeks.org/java-programming-examples/
